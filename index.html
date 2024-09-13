@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=MedievalSharp">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                font-family: "Roboto";
+                margin: 0;
+                color:white;
+                background-color: #171717;
+            }
+            .ms {
+                font-family: "MedievalSharp";
+            }
+            .cn {
+                font-family: "Cinzel";
+            }
+            #headerA {
+                background-image: url("AshMapA.jpg");    
+                background-size: 100%;
+                padding-top: 76px;
+                padding-bottom: 12px;
+            }
+            #headerB {
+                background-image: url("AshMapB.png");    
+                background-size: 100%;
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+
+            .footer {
+                background-color:#0b0b0b;
+                width: 100%;
+                height: 70px;
+                font-size: 20px;
+                text-align: center;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                color:white;
+            }
+
+            .footer a {
+                color:white;
+                font-weight: bolder;
+                font-style: normal;
+                text-decoration: none;
+            }
+            
+            a {
+                color:white;
+                font-weight: bolder;
+                font-style: italic;
+                text-decoration: none;
+            }
+
+            .contentbox {
+                margin-left: 30%;
+                margin-right: 30%;
+                margin-top: 10px;
+                padding: 30px;
+                border-width: 5px;
+                border-radius: 25px;
+                border-color: black;
+                border-style: solid;
+                background-color: #000000da;
+                color:white;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: #000000;
+                /*height: 76px;*/
+                width: 100%;
+                position:fixed;
+                top:0;
+                padding-left: 10px;
+            }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 26px 28px;
+                text-decoration: none;
+                font-size: 18px;
+                /*height: 100%;*/
+            }
+
+            .topnav img {
+                height: 70;
+                float:left;
+                padding:3px 3px;
+                float: left;
+                text-decoration: none;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.split {
+                float: right;
+                background-color: #FFD700;
+                color: rgb(0, 0, 0);
+            }
+
+            .topnav .icon {
+                display: none;
+            }
+
+            .topnav a.split:hover {
+                float: right;
+                background-color: #fff5bf;
+                color: rgb(0, 0, 0);
+            }
+
+            @media screen and (max-width: 900px) {
+                .topnav a:not(:first-child) {display: none;}
+                .topnav a.icon {
+                    float: right;
+                    display: block;
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                .topnav.responsive {position: relative;}
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                .topnav.responsive img {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+                .topnav {
+                    position:relative;
+                }
+                #headerBG {
+                    padding-top: 5px;
+                }
+                .contentbox {
+                    margin-left: 9%;
+                    margin-right: 9%;
+                }
+            }
+        </style>
+    </head>
+    <body>    
+        <div class="topnav" id="tn">
+            <img src="AGLogoSidebar.png"/>
+            <a href="https://discord.gg/ashea">Join Ashea</a>
+            <a href="#aboutme">About Me</a>
+            <a href="https://discordapp.com/users/709192286969528451">Contact Me</a>
+            <a href="https://discord.gg/tJ7bSNUQRG" class="split">Join our Discord</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="content">
+            <div id="headerA">
+                <div class="contentbox">
+                    <center><h1 class="ms" id="aboutme"><strong>Legacy of Solaris</strong></h1></center>
+                    <p>Legacy of Solaris is a Grand Strategy RTS I'm currently developing, based on the period between the fall of the Phoenixian Empire and the crusade of the <a href="https://wiki.aresol.net/wiki/index.php/Imperium_Sanctum_Solaris">Imperium Sanctum Solaris</a>.</p>
+                </div>
+            </div>
+            <div id="headerB">
+                <div class="contentbox">
+                    <center><h1 class="ms" id="aboutme"><strong>About Me</strong></h1></center>
+                    <p>Hey! I'm Voleia. As I'm sure you can see, this site is pretty basic right now. Just figured I'd make it since I'm too tired to think about the game right now lol. Anyway though, this site is mainly for a game I'm making called Legacy of Solaris, a Grand Strategy RTS based on a minecraft server called Ashea. There's a lot that I plan to add, but for now it's mostly just greyboxxing so I can't really share pictures lol. I'll update this site more later, if I continue this project :)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; <a>Aresol Games</a> <span id="currentYear"></span></p>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("tn");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var currentYear = new Date().getFullYear();
+                document.getElementById('currentYear').textContent = currentYear;
+            });
+        </script>
+    </body>
+</html>
