@@ -19,17 +19,74 @@
                 font-family: "Cinzel";
             }
 
+            .youtubevideo {
+                aspect-ratio: 16/9;
+                width: 100%;
+            }
+
+            .container {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                padding-top: 100%; 
+            }
+
+            .responsive-iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 56.25%;
+                border: none;
+            }
+
             #headerA {
                 background-image: url("AshMapA.jpg");    
                 background-size: 100%;
                 padding-top: 76px;
                 padding-bottom: 12px;
             }
-            #headerB {
-                background-image: url("AshMapB.png");    
+            .sectionHeader {
                 background-size: 100%;
                 padding-top: 12px;
                 padding-bottom: 12px;
+            }
+
+            .projectbox {
+                width:30%;
+                float: left;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .protectcontext {
+                width:30%;
+                float:none;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .projectcontent {
+                width:30%;
+                float:right;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .widecontentbox {
+                margin-left: 12%;
+                margin-right: 12%;
+                margin-top: 10px;
+                padding: 30px;
+                border-width: 5px;
+                border-radius: 25px;
+                border-color: black;
+                border-style: solid;
+                background-color: #000000da;
+                color:white;
+                display: inline-block;
             }
 
             .footer {
@@ -157,15 +214,45 @@
                     margin-left: 9%;
                     margin-right: 9%;
                 }
+                .widecontentbox {
+                    margin-left: 9%;
+                    margin-right: 9%;
+                }
+                .subwrapped {
+                    width: auto;
+                }
+
+                .projectbox {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    width:100%;
+                }
+
+                .protectcontext {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    width:100%
+                }
+
+                .projectcontent {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    width:100%
+                }
             }
         </style>
+        <title>Evan's Portfolio</title>
     </head>
     <body>    
         <div class="topnav" id="tn">
             <img src="AGLogoSidebar.png"/>
-            <a href="#aboutme">About Me</a>
-            <a href="https://discordapp.com/users/709192286969528451">Contact Me</a>
-            <a href="https://discord.gg/tJ7bSNUQRG" class="split">302-3</a>
+            <a href="#headerA">About Me</as>
+            <a href="#precovid">Pre-Covid</a>
+            <a href="#covidera">Covid-Era</a>
+            <a href="#postcovid">Post-Covid</a>
+            <a href="#ongoing">Ongoing</a>
+
+            <a href="mailto:shekhar.evan@charterschool.org?subject=From%20Portfolio" class="split">Email Me</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -187,16 +274,186 @@
         </div>!-->
 
         <div class="content">
-            <div class="contentbox">
-                <div id="headerA">
+            <div id="headerA">
+                <div class="contentbox">
                     <center><h1 class="ms" id="aboutme"><strong>About Me</strong></h1></center>
-                    <p>Hi! I'm Evan. I'm a 17yo high school senior at the <a href="https://www.charterschool.org/">Charter School of Wilmington</a>. I have ADHD, which has manifested through low processing speed and severe social anxiety, so I really don't have any "extracurricular" activities that aren't online, unfortunately. I love programming, and I hope to study Computer Science in college. I am also passionate about History and International Relations, and wish to pursue a minor in IR or a related area of study if possible. Lately I've been trying to make a grand strategy / rts game inspired by games like <a href="https://store.steampowered.com/app/1158310/Crusader_Kings_III/">Crusader Kings 3</a>. I only have a few friends in school, but I think I'm a kind and empathetic person when I have the courage to actually talk to people- I don't know of anyone who actively dislikes me. In my free time, I play video games a lot- I like playing strategy games and Sci-Fi games, but I mostly play Minecraft with one specific group of online friends, on a roleplay server where we act pretend to be citizens of fantasy nations and do virtual politics and wars and stuff. Anyway, I'm not really sure how to describe myself that well, but this gives you an idea of my online life, at least.</p>
+                    <p>Hi! I'm Evan. I'm a 17yo high school senior at the <a target="_blank" href="https://www.charterschool.org/">Charter School of Wilmington</a>. I have ADHD, which has manifested through low processing speed and severe social anxiety, so I really don't have any "extracurricular" activities that aren't online, unfortunately. I love programming, and I hope to study Computer Science in college. I am also passionate about History and International Relations, and wish to pursue a minor in IR or a related area of study if possible. Lately I've been trying to make a grand strategy / rts game inspired by games like <a href="https://store.steampowered.com/app/1158310/Crusader_Kings_III/">Crusader Kings 3</a>. </p>
+                    <p>I only have a few friends in school, but I think I'm a kind and empathetic person when I have the courage to actually talk to people- I get along with everyone well in general, though. In my free time, I play video games a lot- I like playing strategy games and Sci-Fi games, but I mostly play Minecraft with one specific group of online friends, on a roleplay server where we pretend to be citizens of fantasy nations and do virtual politics and wars.</p>
+                    <p>The most memorable thing I've done in school was an International Relations simulation last year, where we played out the positions of fictional countries in class and negotiated on their behalf. I've taken almost all of the Computer Science classes, along with International Relations and <a target="_blank" href="https://docs.google.com/document/d/1zWzdP3ZCB_658KM9d-UPvaAUnz36Pg-DKSYAmofF_pI/edit?usp=sharing">AP Comparative Government</a></p>
+                    <p>I want to study computer science, however my most important goal is just to find people who I can collaborate with and be friends with.  Anyway, I'm not really sure how to describe myself that well, but this gives you an idea of my online life, at least. I wrote this when I was a bit tired, I'm basically just listing facts about myself here.</p>
+                    <p style="font-style:italic">Background image is a political map I made of the minecraft roleplay server I mentioned - I intend to replace it before I share this link with you, but I'm writing this in-case I forget</p>
+                </div>
+            </div>
+
+            <div class="footer" id="precovid">
+                <p><strong>Pre-Covid Era</strong></p>
+            </div>
+
+            <div class="sectionHeader" style="background-color: #f5f5f5da;" id="WebBrowser">
+                <div class="widecontentbox"> <!--Nolenopo 1-->
+                    <div class="projectbox"> <!--Image or Embed-->
+                        <h1 class="cn"><strong>"Web Browser" tutorial</strong></h1>
+                        <iframe class="youtubevideo" src="https://www.youtube.com/embed/eTGqRD8jHqA?si=rF0iB3LDRFp3PcCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="projectcontent"> <!--Project Content-->
+                        <h2 class="cn">Content</h2>
+                        <p>The video itself really didn't do that much... It just took advantage of some basic concepts in VB.net. Still kinda interesting tho imo</p>
+                    </div>
+                    <div class="projectcontext"> <!--Project Context (When I made it, why I made it, )-->
+                        <h2 class="cn">Context: Personal Project</h2>
+                        <p>I made this video when I was first learning to code - While the code itself is very basic and takes advantage of a-lot of pre-built features, I think this just demonstrates my interest from a young age.</p><p> Why did I make these tutorials? I felt a desperate need to share my creations and passions with the world, and honestly still do</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer" id="covidera">
+                <p><strong>During Covid</strong></p>
+            </div>
+
+            <div class="sectionHeader" style="background-color: #f5f5f5da;" id="NolenopoI">
+                <div class="widecontentbox"> <!--Nolenopo 1-->
+                    <div class="projectbox"> <!--Image or Embed-->
+                        <h1 class="cn"><strong>Nolenopo I</strong></h1>
+                        <iframe class="youtubevideo" src="https://www.youtube.com/embed/7tTBI58cXVY?si=GeYE5hdcjz5__Ha8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p style="font-style: italic;">Sidenote: Sorry for the poor audio & quality in general</p>
+                    </div>
+                    <div class="projectcontent"> <!--Project Content-->
+                        <h2 class="cn">Content</h2>
+                        <p>The game itself was fairly simple: There were five levels that I designed with MagicaVoxel. Each level had zombies trying to kill you. You had to escape them for a certain amount of time to win. You could buy items with coins you got from completing levels. I also added a multiplayer mode, but never finished it (all you could do was walk around and chat, although that alone wasn't easy)</p>
+                    </div>
+                    <div class="projectcontext"> <!--Project Context (When I made it, why I made it, )-->
+                        <h2 class="cn">Context: Personal Project</h2>
+                        <p>This was the first time I ever *really* tried to make a video game - It was basically just a project for fun and learning, but it's sentimental to me since it was my first ever standalone project and the first project I ever showed to others. I made it during COVID, so there was no school to worry about</p>
+                        <p>Note: In the video I claimed that was the first time I used Unity, which was incorrect - I had used Unity in the past, I had just never actually made anything in it</p>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="sectionHeader" style="background-color: #f5f5f5da;" id="MineWorld">
+            <div class="widecontentbox"> <!--Nolenopo 1-->
+                <div class="projectbox"> <!--Image or Embed-->
+                    <h1 class="cn"><strong>Mine World</strong></h1>
+                    <iframe class="youtubevideo" src="https://www.youtube.com/embed/lTtdE1I0d_4?si=BZKDXkVeSG5dyY3u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="projectcontent"> <!--Project Content-->
+                    <h2 class="cn">Content</h2>
+                    <p>The goal of the game is basically just dodging "mines" and buying upgrades that you could use to move or destroy them. I wanted to recreate an old game I had made, but more importantly I wanted to test my skills handling more complicated movement</p>
+                </div>
+                <div class="projectcontext"> <!--Project Context (When I made it, why I made it, )-->
+                    <h2 class="cn">Context: Personal Project</h2>
+                    <p>I made this game pretty quickly after Nolenopo I - This was an arcadey game inspired by a previous "game" I had made on christmas vacation when I was 8-9yo kid in a platform called ready maker. I made the assets and stuff for it myself, but the game itself was fairly basic and used Unity's basic features.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" id="postcovid">
+            <p><strong>After Covid</strong></p>
+        </div>
+
+        <div class="sectionHeader" style="background-color: #f5f5f5da;">
+            <div class="widecontentbox"> <!--Nolenopo 1-->
+                <div class="projectbox"> <!--Image or Embed-->
+                    <h1 class="cn"><strong>Zombie Armies (MineCraft mod)</strong></h1>
+                    <iframe class="youtubevideo" src="https://www.youtube.com/embed/GD2VOowTqVk?si=BWe_zn2JkG1pp7Kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="projectcontent"> <!--Project Content-->
+                    <h2 class="cn">Content</h2>
+                    <p>This was a minecraft plugin I made which modified the behavior of the zombies in the base-game to fight on behalf of players in line formations. This was my first attempt at real "ai" of any kind.</p>
+                </div>
+                <div class="projectcontext"> <!--Project Context (When I made it, why I made it, )-->
+                    <h2 class="cn">Context: Personal Project</h2>
+                    <p> I spent a few months working on this project, it was made as a plugin for a minecraft server I owned with 3 other friends so we could fight eachother.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionHeader" style="background-color: #f5f5f5da;">
+            <div class="widecontentbox"> <!--Nolenopo 1-->
+                <div class="projectbox"> <!--Image or Embed-->
+                    <h1 class="cn"><strong>Nolenopo V3</strong></h1>
+                    <iframe class="youtubevideo" src="https://www.youtube.com/embed/mUw3IcMHnaw?si=-p8Zel5xTmZUSWcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="projectcontent"> <!--Project Content-->
+                    <h2 class="cn">Content</h2>
+                    <p>The game takes place in a 2d world which extends 200 blocks in either direction. The goal is to survive as long as possible against the zombies, who spawn near you. They spawn at a higher rate in the purple biome.</p>
+                </div>
+                <div class="projectcontext"> <!--Project Context (When I made it, why I made it, )-->
+                    <h2 class="cn">Context: School Project</h2>
+                    <p>This was my Computer Science final for freshman year, in 2022. We chose our own project, I initially intended to make a strategy game but decided to make this instead after conceptualizing the world generation in math class. This took about a month to make and is 1300 lines long, in Javascript. I made all the textures and stuff myself.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionHeader" style="background-color: #f5f5f5da;">
+            <div class="widecontentbox"> <!--Nolenopo 1-->
+                <div class="projectbox"> <!--Image or Embed-->
+                    <h1 class="cn"><strong>Legacy of Solaris V1</strong></h1>
+                    <iframe class="youtubevideo" src="https://www.youtube.com/embed/IXF490j4xZY?si=1OUUJpfS8hEYa8KF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="projectcontent"> <!--Project Content-->
+                    <h2 class="cn">Content</h2>
+                    <p>This game consists of cities and characters on a map. You get tax income from the cities, which you can use to buy soldiers. You can declare wars with other cities and attack their soldiers.</p>
+                </div>
+                <div class="projectcontext"> <!--Project Context (When I made it, why I made it, )-->
+                    <h2 class="cn">Context: Camp Project</h2>
+                    <p>This was my final camp project. I had nine days to work on it and I came up with the idea for it myself, but it was *for* camp. After coming back for camp, I stopped developing this version but I began an entirely new version seperately.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" id="ongoing">
+            <p><strong>Ongoing Projects</strong></p>
+        </div>
+
+        <div class="sectionHeader" style="background-color: #f5f5f5da;">
+            <div class="widecontentbox"> <!--Nolenopo 1-->
+                <div class="projectbox"> <!--Image or Embed-->
+                    <h1 class="cn"><strong>Ashea Races Project (MineCraft mod)</strong></h1>
+                    <iframe class="youtubevideo" src="https://www.youtube.com/embed/7NDMv9_4ym0?si=VssuGakK-AMeudsZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="projectcontent"> <!--Project Content-->
+                    <h2 class="cn">Content</h2>
+                    <p>A modification for minecraft servers that adds fantasy races to the game and lets people level up, use unique abilities, and have unique roleplay characeters ingame</p>
+                </div>
+                <div class="projectcontext"> <!--Project Context (When I made it, why I made it, )-->
+                    <h2 class="cn">Context: Personal Project</h2>
+                    <p>I made this plugin initially as a replacement for a different plugin for the Ashea minecraft server. Right now I'm working on adding a skill tree system, and I plan to keep maintaining it as long as the server is up. Despite just being a mod for an existing game, it's probably the 2nd most complicated on this list.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionHeader" style="background-color: #f5f5f5da;">
+            <div class="widecontentbox"> <!--Nolenopo 1-->
+                <div class="projectbox"> <!--Image or Embed-->
+                    <h1 class="cn"><strong>Legacy of Solaris V2</strong></h1>
+                    <iframe class="youtubevideo" src="https://www.youtube.com/embed/5cpzF5B6Cmk?si=ozPOVamzIqFCmffZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="projectcontent"> <!--Project Content-->
+                    <h2 class="cn">Content</h2>
+                    <p>So far not a huge amount of content is added - Most of the code I've done so-far is backend, but there are a few things that are in the video. Long-term, the goal is for this game to be basically a diplomacy / economics simulator based on a fantasy world</p>
+                </div>
+                <div class="projectcontext"> <!--Project Context (When I made it, why I made it, )-->
+                    <h2 class="cn">Context: Personal Project</h2>
+                    <p>I've wanted to make this for years, but didn't really get dedicated until after Camp ended. Since then I've been developing this, although I've had to slow down a bit because of school. This isn't my real "dream game", but its one of them. I plan to continue working on this in my free time during college, maybe even find other people interested in the Grand Strategy niche.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionHeader" style="background-color: #0b0b0b;">
+            <div class="contentbox">
+                <center><h1 class="ms" id="aboutme"><strong>Other Notes & Mentions</strong></h1></center>
+                <p>
+                    Making this section just to share projects that didn't really make the "cut" for other sections
+                </p>            
+                <li><a target="_blank" href="https://pastebin.com/NSrE9gu5">Essent</a> - Essent was my second minecraft plugin (I can't find the first). Making minecraft plugins was the original reason I got into programming in the first place. Anyway, it's not a super impressive plugin but I linked the code.</li>
+                <li>Also note that I have a lot of projects that were just never fully finished</li>
+                <li>All videos here are my own. NaveGCT was my original YouTube channel, Volotaa of Voltaris was a channel specifically for minecraft stuff, and Voleia is my current channel.</li>
+            </div>
+        </div>
+
         <div class="footer">
-            <!--<p>&copy; <a>Aresol Games</a> <span id="currentYear"></span></p>!-->
+            <p><strong>Evan</strong> <span id="currentYear"></span> - pretend this footer says something important</p>
         </div>
 
         <script>
